@@ -5,7 +5,7 @@ import { CountryDetailsComponent } from './country-details/country-details.compo
 import { RegionsComponent } from './regions/regions.component';
 
 const routes: Routes = [
-    {path: "", pathMatch: "full", redirectTo:  "region"},
+    {path: "", pathMatch: "full", redirectTo:  "regions"},
     {path: 'regions', component: RegionsComponent},
     {path: `country-detail/:countryName`, component: CountryDetailsComponent} 
 ];
