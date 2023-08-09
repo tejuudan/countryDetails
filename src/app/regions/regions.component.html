@@ -1,0 +1,28 @@
+<div class="regions">
+    <div class= "row">
+        <div class="col-md-6">
+            <div class="dropdown_contain">
+                <label for="region">{{ label }}</label>
+                <select class="dropdownSelect" id="region" [(ngModel)]="selectedRegion" (ngModelChange)="onRegionChange()">
+                <option>europe</option>
+                <option>asia</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="dropdown_contain">
+                <label for="country">{{ countryLabel }}</label>
+                <select class="dropdownSelect"  id="country" [disabled]="countries.length === 0"
+                    [(ngModel)]="selectedCountry" (ngModelChange)="onCounteryChange()">
+                    <option *ngFor="let country of countries" [value]="country.name">{{ country.name }}</option>
+                </select>
+            </div>
+           
+        </div>
+    
+    </div>
+    
+</div>
+
+
+    
