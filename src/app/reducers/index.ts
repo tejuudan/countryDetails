@@ -1,12 +1,9 @@
 import { isDevMode } from '@angular/core';
 import {
-  ActionReducer,
   ActionReducerMap,
-  createFeatureSelector,
-  createSelector,
   MetaReducer
 } from '@ngrx/store';
-import * as fromCountry from '../services/country.reducer';
+import * as fromCountry from '../store/country.reducer';
 
 
 export interface State {

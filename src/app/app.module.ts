@@ -1,4 +1,4 @@
-import { NgModule, isDevMode } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,8 +10,8 @@ import { StoreModule } from '@ngrx/store';
 import { HttpClientModule } from '@angular/common/http';
 import { EffectsModule } from '@ngrx/effects';
 import { reducers, metaReducers } from './reducers';
-import { CountryEffects } from './services/country.effects';
-import { regionReducer } from './services/country.reducer';
+import { CountryEffects } from './store/country.effects';
+import { regionReducer } from './store/country.reducer';
 
 
 @NgModule({

@@ -1,7 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Store, select } from '@ngrx/store';
-import * as couteryList from 'src/app/services/country.selectors';
+import * as couteryList from 'src/app/store/country.selectors';
 @Component({
   selector: 'app-country-details',
   templateUrl: './country-details.component.html',
@@ -20,6 +20,5 @@ export class CountryDetailsComponent implements OnInit {
     this.store.pipe(select(couteryList.getCouteries)).subscribe((res: any) => {
       this.countries = res.find((data: any) => this.selectedCountery.countryName.trim(" ") === data.name);
     });
-    console.log("this.countries", this.countries );
   }
 }
