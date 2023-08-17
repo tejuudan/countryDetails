@@ -1,0 +1,23 @@
+<div class="country_detail">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tr>
+                <th>Name</th>
+                <th>Capital</th>
+                <th>Population</th>
+                <th>Currencies</th>
+                <th>Flag</th>
+            </tr>
+            <tr>
+                <td>{{countries.name}}</td>
+                <td>{{countries.capital}}</td>
+                <td>{{countries.population}}</td>
+                <td>{{countries.currencies[0].name}} | {{countries.currencies[0].symbol}}
+                </td>
+                <td>
+                  <img [src]="countries.flags.png" alt="Country Flag" width="130" height="100">
+                </td>
+              <tr>
+        </table>
+      </div>
+</div>
