@@ -3,7 +3,7 @@ import {
   ActionReducerMap,
   MetaReducer
 } from '@ngrx/store';
-import * as fromCountry from '../store/country.reducer';
+import * as fromCountry from '../store/country/country.reducer';
 
 
 export interface State {

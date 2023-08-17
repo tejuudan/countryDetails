@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Store, select } from '@ngrx/store';
-import * as couteryList from 'src/app/store/country.selectors';
+import * as couteryList from 'src/app/store/country/country.selectors';
 @Component({
   selector: 'app-country-details',
   templateUrl: './country-details.component.html',

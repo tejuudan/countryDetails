@@ -7,8 +7,7 @@
                     <select class="dropdownSelect" id="region"
                         formControlName="selectedRegion"
                         (ngModelChange)="onRegionChange()">
-                        <option>Europe</option>
-                        <option>Asia</option>
+                        <option *ngFor="let region of regions" [value]="region">{{ region }}</option>
                     </select>
                 </div>
             </div>

@@ -5,7 +5,7 @@ import { StoreModule } from '@ngrx/store';
 import { of } from 'rxjs';
 import { MockStore, provideMockStore } from '@ngrx/store/testing';
 import { RegionsComponent } from './regions.component';
-import * as CountryActions from 'src/app/store/country.actions';
+import * as CountryActions from 'src/app/store/country/country.actions';
 
 describe('RegionsComponent', () => {
   let component: RegionsComponent;
